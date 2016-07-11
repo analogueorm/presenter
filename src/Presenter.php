@@ -22,4 +22,9 @@ abstract class Presenter
     {
         return new Carbon($date);
     }
+
+    protected function nullable($value)
+    {
+        return new NullPresenter($value);
+    }
 }
