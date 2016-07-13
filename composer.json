@@ -1,5 +1,5 @@
 {
-    "name": "smallhadroncollider/analogue-presenter",
+    "name": "analogueorm/presenter",
     "description": "Easy view presenters for Analogue ORM",
     "keywords": [
         "orm",
@@ -11,7 +11,7 @@
         "presenter",
         "view-models"
     ],
-    "homepage": "https://github.com/smallhadroncollider/analogue-orm-presenter",
+    "homepage": "https://github.com/analogueorm/presenter",
     "license": "MIT",
     "authors": [
         {
@@ -29,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SmallHadronCollider\\AnaloguePresenter\\": "src/"
+            "Analogue\\Presenter\\": "src/"
         }
     },
     "minimum-stability": "stable",

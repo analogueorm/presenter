@@ -1,6 +1,6 @@
 <?php
 
-namespace SmallHadronCollider\AnaloguePresenter;
+namespace Analogue\Presenter;
 
 use Blade;
 use Exception;
