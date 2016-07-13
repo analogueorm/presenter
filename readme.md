@@ -16,7 +16,7 @@ Pull this package in through Composer.
 ```js
 {
     "require": {
-        "smallhadroncollider/analogue-presenter": "0.1.*"
+        "analogueorm/presenter": "0.2.*"
     }
 }
 ```
@@ -28,7 +28,7 @@ The first step is to store your presenters somewhere - anywhere. These will be s
 Here's an example of a presenter.
 
 ```php
-use SmallHadronCollider\Analogue\Presenter;
+use Analogue\Presenter\Presenter;
 
 class UserPresenter extends Presenter {
 
@@ -45,7 +45,7 @@ class UserPresenter extends Presenter {
 }
 ```
 
-Next, on your entity, pull in the `SmallHadronCollider\Analogue\Presentable` trait.
+Next, on your entity, pull in the `Analogue\Presenter\Presentable` trait.
 
 Here's an example - maybe an Analogue `User` entity.
 
@@ -53,7 +53,7 @@ Here's an example - maybe an Analogue `User` entity.
 <?php
 
 use Analogue\ORM\Entity;
-use SmallHadronCollider\Analogue\Presentable;
+use Analogue\Presenter\Presentable;
 
 class User extends Entity {
 
@@ -102,7 +102,7 @@ This adds a `@presenteach` and `@endpresenteach` directive, which allows you to 
 // config/app.php
 'providers' => [
     // ...
-    SmallHadronCollider\Analogue\PresentBladeServiceProvider::class,
+    Analogue\Presenter\PresentBladeServiceProvider::class,
 ]
 ```
 
