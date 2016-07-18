@@ -16,7 +16,7 @@ Pull this package in through Composer.
 ```js
 {
     "require": {
-        "analogueorm/presenter": "0.2.*"
+        "analogue/presenter": "0.2.*"
     }
 }
 ```
