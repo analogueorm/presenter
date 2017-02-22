@@ -12,7 +12,7 @@ class PresentBladeServiceProvider extends ServiceProvider
     {
         Blade::directive("presenteach", function ($expression) {
             $entity = $this->getEntity($expression);
-            return "<?php foreach {$expression}: {$entity} = {$entity}->present() ?>";
+            return "<?php foreach ({$expression}): {$entity} = {$entity}->present() ?>";
         });
 
         Blade::directive("endpresenteach", function ($expression) {
@@ -22,7 +22,7 @@ class PresentBladeServiceProvider extends ServiceProvider
 
     private function getEntity($expression)
     {
-        preg_match("/as (\\$[A-Z_]+)\)$/i", $expression, $matches);
+        preg_match("/as (\\$[A-Z_]+)$/i", $expression, $matches);
 
         if (count($matches) !== 2) {
             throw new Exception("Invalid @presenteach expression: {$expression}");
