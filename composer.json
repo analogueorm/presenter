@@ -20,7 +20,6 @@
         }
     ],
     "require": {
-        "php": "~5.5",
         "analogue/orm": "~5.1",
         "nesbot/carbon": "~1.20"
     },
